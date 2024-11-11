@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Scegli l'orario del tuo appuntamento</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Seleziona l'orario</h2>
+            <p>Ora puoi scegliere l'orario per il tuo appuntamento:</p>
+            
+            <form id="time-form">
+                <label for="appointment-time">Orario dell'appuntamento:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                <button type="submit">Conferma Orario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AlmaVector</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission and redirect to thank you page
+        document.getElementById('time-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Redirect to the thank you page
+            window.location.href = 'thank-you.html';
+        });
+    </script>
+</body>
+</html>

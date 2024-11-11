@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulenza AlmaVector</h1>
+        <p> Raggiungi i tuoi obiettivi, supera le difficoltà e scopri 
+            nuove risorse interiori: la consulenza psicologica ti guida 
+            verso il benessere e la realizzazione personale.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Elena Keselman</h2>
+
+            <button onclick="goToNewPage2()">Scopri più su Elena</button>
+            <script>
+                // JavaScript function to return to the home page
+                function goToNewPage2() {
+                    window.location.href = 'newpage2.html';
+                }
+            </script>
+                
+
+            <div class="image-container">
+                <img src="image1.JPG" alt="A description of the first image" id="myImage">
+                <img src="image2.JPG" alt="A description of the second image" id="myImage2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Agisci ora - il cambiamento inizia da te!</h2>
+
+            <p>Prenota ora la tua consulenza privata e scopri come un supporto professionale 
+                può fare la differenza: un percorso su misura per raggiungere i tuoi obiettivi e 
+                valorizzare il tuo potenziale!</p>
+        
+            <button onclick="goToNewPage()">Prenota Subito</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AlmaVector</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

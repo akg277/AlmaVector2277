@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fissa il tuo appuntamento</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Scegli la data per il tuo appuntamento</h2>
+            <p>Seleziona una data per programmare la tua consulenza:</p>
+            
+            <form id="appointment-form">
+                <label for="appointment-date">Data dell'appuntamento:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                <button type="submit">Conferma Appuntamento</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AlmaVector</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission and redirect
+        document.getElementById('appointment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Redirect to the time selection page
+            window.location.href = 'time-selection.html';
+        });
+    </script>
+</body>
+</html>

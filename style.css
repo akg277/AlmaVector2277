@@ -1,0 +1,121 @@
+/* Import a Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333; /* Dark text color for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #005037; /* Light blue header */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 8px 8px; /* Slight rounding for a softer look */
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main content styling */
+main {
+    margin: 30px;
+    padding: 25px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Section styling */
+section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Image styling */
+img {
+    width: 70%;  /* Larger size for emphasis */
+    max-width: 350px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Adds a gentle shadow */
+}
+
+/* Button styling */
+button {
+    padding: 14px 25px;
+    background-color: #2d9373; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #2d9373; /* Darker shade on hover */
+    transform: scale(1.07);
+}
+
+/* Footer styling */
+footer {
+    background-color: #113328; /* Match footer color with theme */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1em;
+    border-radius: 8px 8px 0 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+.image-container {
+    display: flex;
+    gap: 6px; /* Space between images */
+    justify-content: center; /* Centers the images horizontally */
+    margin-top: 15px;
+}
+
+.image-container img {
+    width: 45%; /* Adjust width as needed */
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
